@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>奶油風參考</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fffdf9">
+<meta property="og:title" content="奶油風參考">
+<meta property="og:description" content="90 張奶油風參考相">
+<meta property="og:image" content="https://jason2023192.github.io/cream-style/cover.jpg">
+<style>
+:root{--bg:#fffdf9;--ink:#3b3530;--muted:#8a8079;--chip:#f1ece5;--ph:#efe8df;--gap:8px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.4 -apple-system,BlinkMacSystemFont,"PingFang HK","Noto Sans HK","Microsoft JhengHei",sans-serif;-webkit-tap-highlight-color:transparent}
+header{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:12px 12px 10px}
+h1{font-size:20px;font-weight:700}
+h1 small{font-size:13px;font-weight:400;color:var(--muted);margin-left:8px}
+nav{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:10px -12px 0;padding:0 12px}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:none;border:0;border-radius:999px;padding:8px 14px;background:var(--chip);color:var(--ink);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+nav button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+main{display:flex;gap:var(--gap);align-items:flex-start;padding:4px 12px 32px}
+.col{flex:1;min-width:0;display:flex;flex-direction:column;gap:var(--gap)}
+.pin{display:block;border:0;padding:0;background:var(--ph);border-radius:16px;overflow:hidden;cursor:zoom-in}
+.pin img{display:block;width:100%;height:auto}
+@media (hover:hover){.pin img{transition:filter .2s}.pin:hover img{filter:brightness(.85)}}
+dialog{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#111;color:#fff}
+dialog::backdrop{background:#111}
+.track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior:contain}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;height:100%;scroll-snap-align:center;scroll-snap-stop:always;display:grid;place-items:center}
+.slide img{max-width:100%;max-height:calc(100dvh - 112px);object-fit:contain}
+.x,.arrow{position:absolute;border:0;background:rgba(255,255,255,.16);color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer}
+.x{top:12px;right:12px}
+.arrow{top:50%;translate:0 -50%}
+.prev{left:16px}.next{right:16px}
+@media (hover:none){.arrow{display:none}}
+.cap{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:13px;opacity:.75;pointer-events:none}
+</style>
+</head>
+<body>
+<header><h1>奶油風參考<small>90 張</small></h1><nav></nav></header>
+<main></main>
+<dialog>
+  <div class="track"></div>
+  <button class="x" aria-label="關閉">✕</button>
+  <button class="arrow prev" aria-label="上一張">‹</button>
+  <button class="arrow next" aria-label="下一張">›</button>
+  <div class="cap"></div>
+</dialog>
+<script>
+const D={"cats": ["無主燈・天花槽燈", "燈帶・間接光", "吊燈", "落地燈・枱燈", "壁燈", "雲朵燈・造型燈", "蠟燭・夜間暖光氛圍", "整體空間燈光配置", "牆面設計參考"], "items": [["b1a45cd19dc6", 600, 992, 0], ["a01c27fa80c8", 600, 799, 0], ["43f1e6635713", 600, 600, 0], ["90886a2b35da", 600, 900, 0], ["2ee490d2711a", 600, 600, 0], ["650e383a7d89", 600, 1050, 0], ["f6bbc9b0193a", 600, 1052, 0], ["196b432140b9", 600, 800, 0], ["f02d97f7aeac", 600, 902, 0], ["de50eddb1ee3", 600, 900, 1], ["d08d1a066d12", 600, 1066, 1], ["872b50879487", 600, 750, 1], ["cb96239541ea", 600, 900, 1], ["4833c0ec46bf", 600, 750, 1], ["8a2c05db7014", 600, 900, 1], ["adceb3efc688", 600, 600, 1], ["f52459425e30", 600, 750, 1], ["bd93e402d6d0", 600, 900, 1], ["3dbddbe4ed9d", 600, 900, 2], ["f3c5588901b4", 600, 600, 2], ["2899b45262ad", 600, 600, 2], ["b2ee579f90ef", 600, 900, 2], ["e4911c1f19d2", 600, 800, 2], ["da15026ace9d", 600, 900, 2], ["d135462a3717", 600, 750, 2], ["49a4a5aef629", 600, 899, 2], ["a6af0aca12c2", 600, 600, 2], ["57b506514b35", 600, 899, 3], ["d98b5fb3968c", 600, 1067, 3], ["48b7a38f307f", 600, 898, 3], ["60029c9015a2", 600, 800, 3], ["14601f76cd46", 600, 900, 3], ["efe3efdedc2b", 600, 900, 3], ["746011b43c03", 600, 1066, 3], ["44ae8b99e8ce", 600, 1074, 3], ["f2ec2c16570f", 600, 900, 3], ["3a67b6537486", 600, 600, 4], ["286fdff3a036", 600, 900, 4], ["6d10680e04ae", 600, 600, 4], ["feb56850912a", 600, 750, 4], ["cbbe03fa3a1a", 600, 600, 4], ["188db7683927", 600, 600, 4], ["adabd20b4c97", 600, 800, 4], ["0ef9b8f0cc8c", 600, 600, 4], ["e136060ee7d3", 600, 797, 4], ["a56740258ad2", 600, 1066, 5], ["c9fd60533a8d", 600, 1074, 5], ["e8807d789035", 600, 720, 5], ["8489000182c1", 600, 1065, 5], ["a6c6424a4430", 600, 600, 5], ["c7c9d0050c05", 600, 900, 5], ["073c33385e26", 600, 900, 5], ["4e2a8d4a3b8e", 600, 955, 5], ["2ef4bfc1e97e", 600, 1070, 5], ["d872909c2df1", 600, 1100, 6], ["0d294d74b494", 600, 1065, 6], ["cc31d4e2c554", 600, 900, 6], ["cca6a05139f3", 600, 1067, 6], ["663c36f41dfc", 600, 900, 6], ["7d60e21eb4e2", 600, 900, 6], ["5473fb51b052", 600, 900, 6], ["dbbbe0d0b4fc", 600, 900, 6], ["1aa1383ceaf8", 600, 1066, 6], ["db49b5591993", 600, 900, 7], ["309a7f971395", 600, 900, 7], ["dbe81601fa33", 600, 799, 7], ["f17d520727f2", 600, 774, 7], ["56b1698abe47", 600, 800, 7], ["075f1cb5db81", 495, 624, 7], ["5ed1dae25dde", 600, 580, 7], ["cdb4028bb0fd", 600, 889, 7], ["c5229e63b643", 600, 400, 7], ["eb655cb074e3", 600, 900, 8], ["5155198929f0", 600, 900, 8], ["059ee94e01e8", 600, 469, 8], ["015445e17672", 600, 900, 8], ["8b4750079e9f", 449, 800, 8], ["b24ac4ac1409", 600, 900, 8], ["6e5615108d8f", 576, 1024, 8], ["4f12feb659b6", 600, 894, 8], ["dfd1959fc8e8", 600, 800, 8], ["996998431ae4", 600, 900, 8], ["1330b3b4c984", 600, 840, 8], ["b1267e952300", 600, 900, 8], ["96d7d1d9c48e", 600, 1298, 8], ["78bd4b84847c", 600, 800, 8], ["3fdaac0c805c", 600, 885, 8], ["80d7d761542c", 600, 900, 8], ["60de20bfa60e", 600, 900, 8], ["c29340ab8b55", 600, 900, 8]]},main=document.querySelector('main'),nav=document.querySelector('nav'),
+  dlg=document.querySelector('dialog'),track=dlg.querySelector('.track'),cap=dlg.querySelector('.cap');
+let shown=[],cols=0,filter=-1,cur=0;
+const src=(h,s)=>'img/'+h+(s?'_s':'')+'.webp';
+function img(h,alt,thumb,lazy){const i=new Image();if(lazy)i.loading='lazy';i.decoding='async';i.alt=alt;i.src=src(h,thumb);return i}
+
+['全部',...D.cats].forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;
+  b.onclick=()=>{filter=i-1;render(true);scrollTo(0,0)};nav.append(b)});
+
+function render(force){
+  const n=Math.max(2,Math.floor((main.clientWidth-24+8)/208));  // 外螢幕 2 欄、主螢幕 3–4 欄
+  if(!force&&n===cols)return;
+  cols=n;
+  if(force){
+    shown=D.items.filter(it=>filter<0||it[3]===filter);
+    nav.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i-1===filter));
+    track.replaceChildren(...shown.map(([h,,,c])=>{const s=document.createElement('div');s.className='slide';s.append(img(h,D.cats[c],0,1));return s}));
+  }
+  const cs=[...Array(n)].map(()=>Object.assign(document.createElement('div'),{className:'col'})),hs=Array(n).fill(0);
+  shown.forEach(([h,w,ht,c],i)=>{  // 逐張擺落最矮嗰欄 = Pinterest 瀑布流
+    const k=hs.indexOf(Math.min(...hs)),b=document.createElement('button'),im=img(h,D.cats[c],1,i>7);
+    im.width=w;im.height=ht;b.className='pin';b.onclick=()=>open(i);b.append(im);cs[k].append(b);hs[k]+=ht/w;
+  });
+  main.replaceChildren(...cs);
+}
+
+function go(i){track.scrollTo({left:i*track.clientWidth,behavior:'smooth'})}
+function update(){cur=Math.round(track.scrollLeft/track.clientWidth);
+  if(shown[cur])cap.textContent=`${cur+1} / ${shown.length}　${D.cats[shown[cur][3]]}`}
+function open(i){dlg.showModal();track.scrollLeft=i*track.clientWidth;update();history.pushState({lb:1},'')}
+
+track.onscroll=update;
+track.onclick=e=>{if(e.target.classList.contains('slide'))history.back()};
+dlg.querySelector('.x').onclick=()=>history.back();
+dlg.querySelector('.prev').onclick=()=>go(cur-1);
+dlg.querySelector('.next').onclick=()=>go(cur+1);
+dlg.addEventListener('cancel',e=>{e.preventDefault();history.back()});
+addEventListener('popstate',()=>{if(dlg.open)dlg.close()});  // Android 返回鍵 = 關大圖
+addEventListener('keydown',e=>{if(dlg.open&&e.key==='ArrowLeft')go(cur-1);if(dlg.open&&e.key==='ArrowRight')go(cur+1)});
+addEventListener('resize',()=>{const i=cur;render(false);if(dlg.open)track.scrollLeft=i*track.clientWidth});  // 摺/攤開
+render(true);
+</script>
+</body>
+</html>
